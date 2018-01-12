@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+</head>
+<body>
+HTML部分
+
+<script>
+    //HTML输出流
+    document.write("我是DOM HTML");
+</script>
+
+
+<!--改变HTML-->
+<p id="p1">Hello World!</p>
+<script>
+    document.getElementById("p1").innerHTML="你好世界!!!";
+</script>
+
+<!--改变HTML标签-->
+<p>Hello World!</p>
+<script>
+    var a=document.getElementsByTagName("p");
+    a[1].innerHTML="new";
+</script>
+
+
+<!--改变HTML class-->
+<p class="p">Hello World!</p>
+<script>
+    var a=document.getElementsByClassName("p");
+    a[0].innerHTML="改变HTML class";
+</script>
+
+</body>
+</html>

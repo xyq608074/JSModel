@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>滑动条触发</title>
+    <style>
+        #abc{
+            width:50px;
+            height: 50px;
+            background: red;
+            transition: 2s;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <script type="text/javascript">
+
+        window.onscroll=function (){
+            var d=document.getElementById("abc").style;
+            console.log(scrollY);
+            if(scrollY>800){
+                d.left="500px";
+            }
+            if(scrollY<850){
+                d.left="0px";
+            }
+        };
+
+    </script>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div id="abc" style="left:0px;">
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

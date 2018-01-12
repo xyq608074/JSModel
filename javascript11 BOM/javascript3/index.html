@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> BOM </title>
+</head>
+<body>
+    <button id="btn">按钮</button>
+<script>
+    var btn=document.getElementById("btn");
+    btn.onclick=function(){
+        var x=screen.width/2-250;
+        alert(x);
+        window.open("http://www.baidu.com","name","width=500,height=400,left="+x+",top=500");
+    }
+</script>
+
+
+</body>
+</html>

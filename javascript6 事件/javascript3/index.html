@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>函数</title>
+    <style>
+        #change{
+            width:50px;
+            height: 50px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <button>按钮</button>
+    <button id="btn">按钮</button>
+
+    <div id="change" style="transition: 1s"></div>
+    <script type="text/javascript">
+        //鼠标点击事件
+        document.getElementById("btn").onclick=function(){
+            console.log("鼠标点击事件");
+        }
+
+        //鼠标悬停事件
+        document.getElementById("btn").onmouseover=function(){
+            console.log("鼠标悬停事件");
+            document.getElementById("change").style.width="500px";
+        }
+
+        //鼠标移出事件
+        document.getElementById("btn").onmouseout=function(){
+            console.log("鼠标移出事件");
+            document.getElementById("change").style.width="50px";
+        }
+
+//        //鼠标移动到事件
+//        document.getElementById("btn").onmousemove=function(){
+//            console.log("鼠标移动到事件");
+//        }
+
+
+        var ekey=e||event;
+        var codekey=ekey.keyCode||ekey.which||ekey.charCode;
+        //键盘按下事件
+        window.onkeydown=function(){
+            alert(codekey);
+        }
+
+
+
+    </script>
+</body>
+</html>

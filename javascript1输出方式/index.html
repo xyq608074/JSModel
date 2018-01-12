@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>js输出方式</title>
+</head>
+<body>
+    <p>1.alert</p>
+    <!--<script> alert("复习第一个js");</script>-->
+    <p id="inner">2.innerHTML</p>
+    <script>
+//        var inner=document.getElementById("inner");
+//        inner.innerHTML="2.innerHTML 在html标签元素中修改文本";
+
+        document.getElementById("inner").innerHTML="2.innerHTML 在html标签元素中修改文本";
+    </script>
+    <p>3.document.write</p>
+    <script>
+        document.write("document.write文本");
+    </script>
+    <p>4.console.log</p>
+    <script>
+        console.log("我是console.log");
+    </script>
+</body>
+</html>

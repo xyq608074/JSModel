@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>函数</title>
+</head>
+<body>
+
+    <button id="btn" onclick="ccc()">按钮</button>
+
+
+    <script type="text/javascript">
+        //基本函数写法
+        function aaa(){
+            console.log("aaa");
+        }
+
+        //传参函数
+        function bbb(num1,num2){
+            console.log(num1*num2);
+        }
+
+        //返回函数
+        function ccc(num1,num2){
+            return num1*num2;
+        }
+        console.log(ccc(9,5));
+
+        //匿名函数
+        document.getElementById("btn").onclick=function(){
+            console.log("bbb");
+        }
+
+
+    </script>
+</body>
+</html>
